@@ -4,10 +4,10 @@ import './Menu.css';
 
 const Menu = (props) => (
     <div className="background">
-        <p className="logo">NAZWA</p>
-        <p className="menu-bar">ZAREJESTRUJ SIĘ</p>
-        <p className="menu-bar">ZALOGUJ SIĘ</p>
-        <p className="menu-bar">PROWADZISZ BIZNES BEAUTY?</p>
+        <a href="#" className="logo">NAZWA</a>
+        <a href="#" className="menu-bar">ZAREJESTRUJ SIĘ</a>
+        <a href="#" className="menu-bar">ZALOGUJ SIĘ</a>
+        <a href="#" className="menu-bar">PROWADZISZ BIZNES BEAUTY</a>
     </div>
 );
 
