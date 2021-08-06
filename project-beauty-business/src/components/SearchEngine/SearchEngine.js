@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SearchEngine = (props) => (
-    <div>
+    <div className="photo">
         <h3>SearchEngine works</h3>
     </div>
 );

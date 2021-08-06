@@ -1,0 +1,47 @@
+.container {
+    margin: 0 auto;
+}
+  
+.item {
+    display: inline-block;
+    vertical-align: top;
+}
+  
+.third {
+   width: 33.3%;
+}
+  
+.bg-cover {
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+  
+.tile {
+    height: 53.4em;
+}
+
+.left{
+    background-image: url(../../assets/leftgirl.png);
+    border-right: 10px solid #FFFFFF;
+}
+.bottom{
+    background-image: url(../../assets/bottomgirl.png);
+    border-left: 10px solid #FFFFFF;
+    border-right: 10px solid #FFFFFF;
+}
+.right{
+    background-image: url(../../assets/rightgirl.png);
+    border-left: 10px solid #FFFFFF;
+}
+
+.center{
+    background-color:#ffffffce;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+p{
+    color: #FF2F6D;
+    font-size: 4rem;
+}
