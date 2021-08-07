@@ -3,17 +3,16 @@ import './HomePage.css';
 
 const HomePage = () => (
     <div class="container">
-        <div className="item third bg-cover tile left">
-        </div>
- 
-        <div className="item third bg-cover tile bottom">
-            <div className="center">
-                <h1>BEATY BUSINESS</h1>
-                <p>Ranking</p>
+        <div className="left image"></div>
+        <div className="center image"></div>
+        <div className="right image"></div>
+        <div className="whitetable">
+            <h1> BEAUTY BUSINESS </h1>
+            <p> ranking </p>
+            <div>
+                <a href="http://localhost:3000/searchBar" class="myButton">START</a>
             </div>
         </div>
- 
-        <div className="item third bg-cover tile right"></div>
-</div>
+    </div>
 );
 export default HomePage;
