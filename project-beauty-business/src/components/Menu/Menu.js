@@ -1,25 +1,32 @@
 import React from 'react';
 import './Menu.css';
-import styled from 'styled-components';
-
-const Back = styled.nav`
-      width: 100%;
-    height: 120px;
-    background: #343131;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-`;
+import SearchEngine from '../SearchEngine/SearchEngine';
+import HomePage from '../../views/HomePage/HomePage';
+import { BrowserRouter as Router, 
+    Switch,
+    Route,
+    Link } from "react-router-dom";
 
 const Menu = (props) => (
-    // <nav className="background">
-    <Back>
-        <a href="#" className="logo">NAZWA</a>
-        <a href="#" className="menu-bar">ZAREJESTRUJ SIĘ</a>
-        <a href="#" className="menu-bar">ZALOGUJ SIĘ</a>
-        <a href="#" className="menu-bar">PROWADZISZ BIZNES BEAUTY</a>
-    </Back>
-    /* </nav> */
+    <Router>
+    <nav className="background">
+        <Link to="/" className="logo">NAZWA</Link>
+        <Link to="/searchBar" className="menu-bar">WYSZUKAJ</Link>
+        <Link to="#" className="menu-bar">ZAREJESTRUJ SIĘ</Link >
+        <Link to="#" className="menu-bar">ZALOGUJ SIĘ</Link>
+        <Link to="#" className="menu-bar">PROWADZISZ BIZNES BEAUTY?</Link>
+    </nav>
+    
+        <Switch>
+            <Route path="/searchBar">
+                <SearchEngine />
+            </Route>
+            <Route path="/">
+                <HomePage />
+            </Route>
+        </Switch> 
+    
+    </Router>
 );
 
 Menu.propTypes = {};
