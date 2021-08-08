@@ -1,0 +1,10 @@
+.background-search-engine {
+    width: 100%;
+    height: 350px;
+    background: #343131;
+    opacity: 0.7;
+}
+
+.filter option {
+    background-color: rgb(255, 0, 0);
+}

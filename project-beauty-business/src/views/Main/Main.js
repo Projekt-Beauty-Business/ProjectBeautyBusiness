@@ -3,7 +3,9 @@ import './Main.css';
 import Menu from '../../components/Menu/Menu';
 
 const Main = (props) => (
-        <Menu />
+        <div className="photo">
+                <Menu />
+        </div>
 );
 
 Main.propTypes = {};
