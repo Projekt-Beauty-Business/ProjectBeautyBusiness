@@ -12,24 +12,24 @@ import { BrowserRouter as Router,
 
 const Main = (props) => (
     <Router>
-        <nav>
-            <ul>
-                <li><Link to = "/">Home</Link></li>
-                <li><Link to = "/searchBar">Search</Link></li>
-            </ul>
-        </nav>
-        <Switch>
-            <Route path="/searchBar">
-            
-                <Menu />
-                <SearchEngine />
-            
-            </Route>
-            <Route path="/">
-                <HomePage />
-            </Route>
-        </Switch> 
-    </Router>
+    <nav>
+        <ul>
+            <li><Link to = "/">Home</Link></li>
+            <li><Link to = "/searchBar">Search</Link></li>
+        </ul>
+    </nav>
+    <Switch>
+        <Route path="/searchBar">
+            <div className="photo">
+            <Menu />
+            <SearchEngine />
+            </div>
+        </Route>
+        <Route path="/">
+            <HomePage />
+        </Route>
+    </Switch> 
+</Router>
 );
 
 Main.propTypes = {};
