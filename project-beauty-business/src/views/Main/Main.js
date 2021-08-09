@@ -4,7 +4,6 @@ import Menu from '../../components/Menu/Menu';
 
 const Main = (props) => (
         <div className="photo">
-                <Menu />
         </div>
 );
 

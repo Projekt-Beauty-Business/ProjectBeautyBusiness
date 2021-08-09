@@ -1,5 +1,6 @@
 import React from 'react';
 import './Menu.css';
+
 import SearchEngine from '../SearchEngine/SearchEngine';
 import HomePage from '../../views/HomePage/HomePage';
 import { BrowserRouter as Router, 
@@ -16,7 +17,7 @@ const Menu = (props) => (
         <Link to="#" className="menu-bar">ZALOGUJ SIĘ</Link>
         <Link to="#" className="menu-bar">PROWADZISZ BIZNES BEAUTY?</Link>
     </nav>
-    
+
         <Switch>
             <Route path="/searchBar">
                 <SearchEngine />
@@ -25,7 +26,7 @@ const Menu = (props) => (
                 <HomePage />
             </Route>
         </Switch> 
-    
+
     </Router>
 );
 
