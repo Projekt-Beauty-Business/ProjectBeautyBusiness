@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 
 const SearchEngine = (props) => (
-       <h3>SearchEngine works</h3>
+    <div>
+        <h3>SearchEngine works</h3>
+    </div>
 );
 
 SearchEngine.propTypes = {};
