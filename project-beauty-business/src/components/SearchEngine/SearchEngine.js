@@ -1,10 +1,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import * as classes from './SearchEngine.module.css'
+import { options } from '../../assets/data';
+import Select from 'react-select';
+
+const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      borderBottom: '1px solid black',
+      color: state.isSelected ? 'black' : 'black',
+      padding: 10,
+      width: 280,
+    }),
+    control: () => ({
+      // none of react-select's styles are passed to <Control />
+      width: 280,
+    }),
+    singleValue: (provided, state) => {
+      const opacity = state.isDisabled ? 0.5 : 1;
+      const transition = 'opacity 300ms';
+  
+      return { ...provided, opacity, transition };
+    }
+  }
+
 
 
 const SearchEngine = (props) => (
-    <div>
-        <h3>SearchEngine works</h3>
+    <div className={classes.background}>
+        <p className={classes.text}>ZNAJDŹ SALON LUB GABINET MEDYCYNY ESTETYCZNEJ</p>
+        <div className={classes.box}>
+            <div className={classes.boxSelect}>
+                <Select components={{ DropdownIndicator:() => null, IndicatorSeparator:() => null }} className={classes.select} styles={customStyles}  placeholder="SPECIAJLIZACJA" options={options}/>
+                <Select components={{ DropdownIndicator:() => null, IndicatorSeparator:() => null }} className={classes.select} styles={customStyles}  placeholder="MIASTO LUB DZIELNICA" options={options}/ >
+            </div>
+            <div className={classes.button}>
+                <p className={classes.buttonText}>SZUKAJ</p>
+            </div>
+        </div>
     </div>
 );
 
