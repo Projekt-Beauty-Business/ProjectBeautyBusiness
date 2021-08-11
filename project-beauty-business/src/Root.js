@@ -5,7 +5,7 @@ import { BrowserRouter as Router,
     Switch,
     Route,
     Link } from "react-router-dom";
-import HomePage from './views/HomePage/HomePage';
+import HomePage from './views/HomePage/index'
 
 const Root = (props) => (
     <Router>
