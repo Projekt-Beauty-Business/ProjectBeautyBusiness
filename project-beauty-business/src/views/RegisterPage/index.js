@@ -28,7 +28,7 @@ const RegisterPage = (props) => (
             <input className={classes.input} placeholder="Twoje hasło"/>
             <button className={classes.button}>Zarejestruj się</button>
             <div className={classes.box}>
-                <p className={classes.endText}>Żeby kontynuować zaloguj się na NAZWA</p><p className={classes.spacer}>_</p><p className={classes.endTextPink}>Zaloguj się!</p>
+                <p className={classes.endText}>Żeby kontynuować zaloguj się na NAZWA</p><p className={classes.spacer}>_</p><p className={classes.endTextPink}><Link className={classes.endTextPink} to="/LoginPage">Zaloguj się!</Link></p>
             </div>
         </div>
     </div>

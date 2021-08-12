@@ -1,5 +1,9 @@
 import React from 'react';
 import * as classes from './HomePage.module.css';
+import { BrowserRouter as Router, 
+    Switch,
+    Route,
+    Link } from "react-router-dom";
 
 const HomePage = () => (
     <div className={classes.container}>
@@ -9,7 +13,7 @@ const HomePage = () => (
         <div className={classes.whitetable}>
             <h1> BEAUTY BUSINESS </h1>
             <p> ranking </p>
-            <button className={classes.button}><a href="http://localhost:3000/SearchPage">START</a></button>
+            <Link to="/SearchPage"><button className={classes.button}>START</button></Link>
         </div>
     </div>
 );

@@ -11,6 +11,7 @@
 .logo {
     font-size: 75px;
     color: #FF2F6D;
+    text-decoration: none;
 }
 
 .menu {
@@ -82,10 +83,12 @@
     cursor: pointer;
     border-radius: 15px;
     transition: 0.5s;
+    opacity: 0.7;
 }
 
 .button:hover {
-    background: #ff1d61;
+    background: #ff0a54;
+    opacity: 1;
 }
 
 .forgetPassword {
@@ -135,6 +138,7 @@
     font-size: 18px;
     color: #FF2F6D;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .endTextPink:hover {

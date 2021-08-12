@@ -8,10 +8,14 @@ import { BrowserRouter as Router,
 import HomePage from './views/HomePage/index'
 import LoginPage from './views/LoginPage';
 import RegisterPage from './views/RegisterPage';
+import LogoutMainPage from './views/LogoutMainPage';
 
 const Root = (props) => (
     <Router>
         <Switch>
+            <Route path="/LogoutMainPage">
+                <LogoutMainPage />
+            </Route>
             <Route path="/RegisterPage">
                 <RegisterPage />
             </Route>

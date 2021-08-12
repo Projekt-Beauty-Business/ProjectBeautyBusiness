@@ -52,15 +52,13 @@ p{
     border-radius:10px;
     padding:20px 50px;
     transition: 0.5s;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+    cursor: pointer;
 }
 .button:hover {
     background-color:#1b1b1be5;
-}
-
-a{
-  text-decoration: none;
-  font-family:'Times New Roman', Times, serif;
-  font-size:28px;
-  font-weight:bold;
-  color: white;
 }

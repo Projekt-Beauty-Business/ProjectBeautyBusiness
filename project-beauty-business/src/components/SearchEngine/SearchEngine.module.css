@@ -50,6 +50,10 @@
     cursor:pointer;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .buttonText {
     font-size: 30px;
     color: #fff;

@@ -1,0 +1,33 @@
+.background {
+    background-image: url(../../assets/background.png);
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+
+.random {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2000px;
+    background: violet;
+}
+
+.firstContainer {
+    width: 95%;
+    height: 250px;
+    background: #fff;
+    border-radius: 19px;
+    margin-top: 50px;
+}
+
+.invisibleBackgound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
