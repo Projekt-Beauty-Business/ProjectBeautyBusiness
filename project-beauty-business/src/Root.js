@@ -6,10 +6,18 @@ import { BrowserRouter as Router,
     Route,
     Link } from "react-router-dom";
 import HomePage from './views/HomePage/index'
+import LoginPage from './views/LoginPage';
+import RegisterPage from './views/RegisterPage';
 
 const Root = (props) => (
     <Router>
         <Switch>
+            <Route path="/RegisterPage">
+                <RegisterPage />
+            </Route>
+            <Route path="/LoginPage">
+                <LoginPage/>
+            </Route>
             <Route path="/SearchPage">
                 <SearchPage />
             </Route>

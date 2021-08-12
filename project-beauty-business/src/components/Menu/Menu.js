@@ -8,8 +8,8 @@ import { BrowserRouter as Router,
 const Menu = (props) => (
     <nav className="background">
         <Link to="/" className="logo">NAZWA</Link>
-        <Link to="#" className="menu-bar">ZAREJESTRUJ SIĘ</Link >
-        <Link to="#" className="menu-bar">ZALOGUJ SIĘ</Link>
+        <Link to="/RegisterPage" className="menu-bar">ZAREJESTRUJ SIĘ</Link >
+        <Link to="/LoginPage" className="menu-bar">ZALOGUJ SIĘ</Link>
         <Link to="#" className="menu-bar">PROWADZISZ BIZNES BEAUTY?</Link>
     </nav>
 );
