@@ -145,3 +145,106 @@
 .endTextPink:hover {
     color: #ff1d61;
 }
+
+@media (max-width: 1025px) {
+    .container {
+        height: 110vw;
+        width: 90vw;
+    }
+
+    .mainText {
+        font-size: 6vw;
+    }
+
+    .mediaBox {
+        width: 70vw;
+        height: 10vw;
+        margin-top: 30px;
+    }
+
+    .mediaText {
+        font-size: 4vw;
+    }
+
+    .googleIcon {
+        margin-left: -30vw;
+        font-size: 5vw;
+    }
+
+    .facebookIcon {
+        margin-left: -30vw;
+        font-size: 5vw;
+    }
+
+    .forgetPassword {
+        font-size: 4vw;
+        margin-top: 30px;
+    }
+
+    .input {
+        width: 70vw;
+        height: 10vw;
+        font-size: 3.5vw;
+        margin-top: 25px;
+    }
+
+    .input:nth-child(odd) {
+        margin-top: 25px;
+    }
+
+    .button {
+        width: 70vw;
+        height: 10vw;
+        font-size: 3.5vw;
+        margin-top: 30px;
+    }
+
+    .endText {
+        font-size: 3vw;
+    }
+
+    .endTextPink {
+        font-size: 3vw;
+    }
+
+    .box {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        height: 150vw;
+    }
+
+    .input {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .mediaBox {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .endText {
+        font-size: 4vw;
+    }
+
+    .endTextPink {
+        font-size: 4vw;
+    }
+
+}
+
+@media (max-width: 355px) {
+    .button {
+        height: 20vw;
+    }
+}
+
+@media (max-width: 290px) {
+    .container {
+        height: 170vw;
+    }
+}
