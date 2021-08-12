@@ -29,8 +29,10 @@ const LoginPage = (props) => (
                 <p className={classes.mediaText}>Kontynuuj z Google</p>
             </div>
             <div className={classes.box}>
-                <p className={classes.endText}>Nie masz konta na NAZWA</p><p className={classes.spacer}>_</p><p className={classes.endTextPink}><Link className={classes.endTextPink} to="/RegisterPage">Zarejestruj się!</Link></p></div>
+                <p className={classes.endText}>Nie posiadasz konta na NAZWA?</p> 
+                <p className={classes.endTextPink}><Link className={classes.endTextPink} to="/RegisterPage">Zarejestruj się!</Link></p>
             </div>
+        </div>
     </div>
 );
 
