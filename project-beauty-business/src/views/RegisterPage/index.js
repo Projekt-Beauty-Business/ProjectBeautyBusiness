@@ -26,8 +26,8 @@ const RegisterPage = (props) => (
                 <p className={classes.mediaText}>Kontynuuj z Google</p>
             </div>
             <p className={classes.forgetPassword}>lub</p>
-            <input type="text" className={classes.input} placeholder="Twój e-mail"/>
-            <input className={classes.input} placeholder="Twoje hasło"/>
+            <input type="text" className={classes.input} placeholder="Twój e-mail" type="email"/>
+            <input className={classes.input} placeholder="Twoje hasło" type="password"/>
             <button className={classes.button}>Zarejestruj się</button>
             <div className={classes.box}>
                 <p className={classes.endText}>Posiadasz już konto na NAZWA?</p>
