@@ -13,7 +13,9 @@ const RegisterPage = (props) => (
         <div className={classes.menu}>
             <Link to="/" className={classes.logo}>NAZWA</Link>
         </div>
+        
         <div className={classes.container}>
+            <div className={classes.whiteBox}>
             <p className={classes.mainText}>Załóż darmowe konto</p>
             <div className={classes.mediaBox}>
                 <FaFacebookSquare className={classes.facebookIcon}/> 
@@ -30,6 +32,7 @@ const RegisterPage = (props) => (
             <div className={classes.box}>
                 <p className={classes.endText}>Posiadasz już konto na NAZWA?</p>
                 <p className={classes.endTextPink}><Link className={classes.endTextPink} to="/LoginPage">Zaloguj się!</Link></p>
+            </div>
             </div>
         </div>
     </div>

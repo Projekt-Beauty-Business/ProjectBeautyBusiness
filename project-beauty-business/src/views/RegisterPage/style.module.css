@@ -7,7 +7,11 @@
     align-items: center;
     justify-content: center;
 }
-
+.whiteBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .logo {
     font-size: 5vw;
     color: #FF2F6D;
@@ -34,22 +38,21 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .mainText {
     color: #000;
-    font-size: 3vw;
-    font-weight: 900;
-    margin-left: -12vw;
-    margin-top: 1vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin: 1vw 0 0 -15vw;
 }
 
 .input {
-    width: 40vw;
+    width: 38vw;
     margin-top: 20px;
-    height: 30vw;
+    height: 4vw;
     padding-left: 2vw;
-    padding: 10px;
     border: none;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3) inset;
     outline: none;
@@ -74,7 +77,7 @@
 
 .button {
     width: 40vw;
-    height: 10vw;
+    height: 4vw;
     outline: none;
     border: none;
     background: #FF2F6D;
@@ -94,10 +97,10 @@
 }
 
 .forgetPassword {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     color: #000;
     font-size: 1.5vw;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .mediaText {
@@ -109,7 +112,7 @@
     cursor: pointer;
     display: flex;
     width: 40vw;
-    height: 3vw;
+    height: 4vw;
     background: #fff;
     border: 1px solid #ddd;
     margin-top: 15px;
@@ -187,8 +190,11 @@
     }
 
     .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 3.5vw;
-        margin-top: 20px;
+        padding: 35px;
     }
 
     .endText {
@@ -197,10 +203,6 @@
 
     .endTextPink {
         font-size: 3vw;
-    }
-
-    .box {
-        margin-top: 30px;
     }
 
     .menu {
@@ -233,9 +235,16 @@
     }
     
     .button {
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 15px;
     }
 
+    .box{
+        margin-top: 10px;
+    }
     .menu {
         height: 20vw;
     }
@@ -244,20 +253,6 @@
         font-size: 10vw;
     }
 
-}
-
-@media (max-width: 355px) {
-    .button {
-        height: 20vw;
-    }
-
-    .endText {
-        margin-top: -5px;
-    }
-
-    .endTextPink {
-        margin-top: -5px;
-    }
 }
 
 @media (max-width: 290px) {

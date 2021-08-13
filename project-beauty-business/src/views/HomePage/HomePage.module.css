@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 50vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -37,11 +37,11 @@
   text-align: center;
   background-color:#ffffffaf;
 }
-h1{
+.mainText{
   font-family:'Times New Roman', Times, serif;
   font-size: 5em;
 }
-p{ 
+.pinkText{ 
   font-family:'Times New Roman', Times, serif;
   font-size: 7em;
   color:#FF2F6D;

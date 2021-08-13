@@ -11,8 +11,8 @@ const HomePage = () => (
         <div className={classes.centerimage}></div>
         <div className={classes.rightimage}></div>
         <div className={classes.whitetable}>
-            <h1> BEAUTY BUSINESS </h1>
-            <p> ranking </p>
+            <h1 className={classes.mainText}> BEAUTY BUSINESS </h1>
+            <p className={classes.pinkText}> ranking </p>
             <Link to="/SearchPage"><button className={classes.button}>START</button></Link>
         </div>
     </div>
