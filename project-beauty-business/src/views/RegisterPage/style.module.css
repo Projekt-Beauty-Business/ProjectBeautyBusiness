@@ -47,17 +47,14 @@
 .input {
     width: 40vw;
     margin: 20px auto;
-    height: 5vw;
+    height: 30vw;
     padding-left: 2vw;
+    padding: 10px;
     border: none;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3) inset;
     outline: none;
     border-radius: 1vw;
     font-size: 1.3vw;
-}
-
-.input:nth-child(odd) {
-    margin-top: 1.5vw;
 }
 
 
@@ -77,12 +74,13 @@
 
 .button {
     width: 40vw;
-    height: 5vw;
+    height: 10vw;
     outline: none;
     border: none;
     background: #FF2F6D;
     color: #fff;
     font-size: 1.5vw;
+    padding: 10px;
     cursor: pointer;
     border-radius: 1vw;
     transition: 0.5s;
@@ -111,7 +109,7 @@
     cursor: pointer;
     display: flex;
     width: 40vw;
-    height: 4vw;
+    height: 3vw;
     background: #fff;
     border: 1px solid #ddd;
     margin-top: 20px;
@@ -120,7 +118,7 @@
 }
 
 .mediaBox:nth-child(even) {
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 .box {
@@ -159,7 +157,7 @@
     .mediaBox {
         width: 70vw;
         height: 10vw;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .mediaText {
@@ -178,25 +176,19 @@
 
     .forgetPassword {
         font-size: 4vw;
-        margin-top: 30px;
+        margin-top: 2vw;
     }
 
     .input {
         width: 70vw;
         height: 10vw;
         font-size: 3.5vw;
-        margin-top: 25px;
-    }
-
-    .input:nth-child(odd) {
-        margin-top: 25px;
+        margin-top: 2vw;
     }
 
     .button {
-        width: 70vw;
-        height: 10vw;
         font-size: 3.5vw;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .endText {
@@ -210,20 +202,25 @@
     .box {
         margin-top: 30px;
     }
+
+    .menu {
+        height: 12vw;
+    }
 }
 
 @media (max-width: 500px) {
     .container {
-        height: 150vw;
+        margin-top: 20vw;
+        height: 140vw;
     }
 
     .input {
-        padding: 20px;
+        padding: 7px;
         margin-top: 10px;
     }
 
     .mediaBox {
-        padding: 20px;
+        padding: 4px;
         margin-top: 20px;
     }
 
@@ -234,12 +231,32 @@
     .endTextPink {
         font-size: 4vw;
     }
+    
+    .button {
+        padding: 10px;
+    }
+
+    .menu {
+        height: 20vw;
+    }
+
+    .logo {
+        font-size: 10vw;
+    }
 
 }
 
 @media (max-width: 355px) {
     .button {
         height: 20vw;
+    }
+
+    .endText {
+        margin-top: -5px;
+    }
+
+    .endTextPink {
+        margin-top: -5px;
     }
 }
 

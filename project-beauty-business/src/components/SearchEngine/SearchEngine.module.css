@@ -1,36 +1,39 @@
 .background {
     position: absolute;
-    margin-top: 400px;
-    width: 1178px;
-    height: 245px;
+    margin-top: 23vw;
+    width: 60vw;
+    height: 12vw;
     background: #343131;
     opacity: 0.7;
+    display: flex;
+    justify-content: center;
 }
 
 .text {
     position: absolute;
     color: #fff;
-    font-size: 24px;
-    margin: 30px 200px;
+    font-size: 1.25vw;
+    margin: 1.5vw 10vw;
 }
 
 .select {
-    width: 281px;
-    height: 51px;
+    width: 14.5vw;
+    height: 2.6vw;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 0.75vw;
     color: rgb(238, 0, 0);
     display: flex;
     align-items: center;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 0.9vw;
 }
 
 
 .box {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 6vw;
+    flex-wrap: wrap;
 }
 
 .boxSelect {
@@ -40,9 +43,9 @@
 .button {
     margin-left: 20px;
     background: #FF2F6D;
-    width: 160px;
-    height: 51px;
-    border-radius: 10px;
+    width: 8vw;
+    height: 2.6vw;
+    border-radius: 0.75vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,10 +58,101 @@
 }
 
 .buttonText {
-    font-size: 30px;
+    font-size: 1.5vw;
     color: #fff;
 }
 
 .button:hover {
     background-color:#c40985;
+}
+
+@media (max-width: 1300px) {
+ .background {
+     width: 80vw;
+     height: 30vw;
+     margin-top: 50vw;
+ }   
+
+ .text {
+     font-size: 2vw;
+ }
+
+ .select {
+     width: 27vw;
+     height: 5vw;
+     font-size: 1.5vw;
+ }
+
+ .button {
+    width: 20vw;
+    height: 8vw;
+ }
+
+ .buttonText {
+     font-size: 3vw;
+ }
+
+ .box {
+     margin-top: 8vw;
+     width: 50vw;
+ }
+}
+
+@media (max-width: 850px) {
+    .background {
+        height: 30vw;
+        margin-top: 50vw;
+    }
+
+    .text {
+        font-size: 2vw;
+    }
+
+    .select {
+        width: 32vw;
+        height: 8vw;
+        font-size: 1.75vw;
+    }
+
+    .button {
+        width: 15vw;
+        height: 8vw;
+    }
+
+    .box {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .background {
+        position: absolute;
+        bottom: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .text {
+        font-size: 4vw;
+        margin-top: 5vw;
+    }
+
+    .button {
+        width: 40vw;
+        height: 15vw;
+    }
+
+    .buttonText {
+        font-size: 5vw;
+    }
+
+    .box {
+        margin-top: 30vw;
+    }
+
+    .select {
+        width: 40vw;
+        height: 13vw;
+        font-size: 3vw;
+    }
 }
