@@ -10,10 +10,12 @@ const HomePage = () => (
         <div className={classes.leftimage}></div>
         <div className={classes.centerimage}></div>
         <div className={classes.rightimage}></div>
+        <div className={classes.space}>
         <div className={classes.whitetable}>
-            <h1 className={classes.mainText}> BEAUTY BUSINESS </h1>
+            <div className={classes.mainText}> <p className={classes.left}>BEAUTY</p> <p className={classes.right}>BUSINESS</p></div>
             <p className={classes.pinkText}> ranking </p>
             <Link to="/SearchPage"><button className={classes.button}>START</button></Link>
+        </div>
         </div>
     </div>
 );
