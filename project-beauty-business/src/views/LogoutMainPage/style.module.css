@@ -24,10 +24,40 @@
     background: #fff;
     border-radius: 19px;
     margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .invisibleBackgound {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.leftFirstContiner {
+    display: flex;
+}
+
+.mainPhoto {
+    background-image: url(../../assets/rightgirl.png);
+    background-size: cover;
+    width: 6vw;
+    border-radius: 25px;
+    height: 11vw;
+    margin-left: 1vw;
+}
+
+.mainInformation {
+    display: flex;
+    flex-direction: column;
+}
+
+.redirects {
+    font-size: 0,5vw;
+}
+
+.mainText {
+    color: #FF2F6D;
+    font-size: 45px;
 }

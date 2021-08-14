@@ -8,6 +8,12 @@
     justify-content: center;
 }
 
+.whiteBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logo {
     font-size: 5vw;
     color: #FF2F6D;
@@ -34,20 +40,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .mainText {
     color: #000;
-    font-size: 3vw;
-    font-weight: 900;
-    margin-left: -6vw;
-    margin-top: 30px;
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin: 1.5vw 9.8vw 0 0;
 }
 
 .input {
     width: 40vw;
-    height: 5vw;
-    margin: 20px auto;
+    height: 4vw;
+    margin-top: 20px;
     padding-left: 2vw;
     border: none;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3) inset;
@@ -55,11 +61,6 @@
     border-radius: 1vw;
     font-size: 1.3vw;
 }
-
-.input:nth-child(odd) {
-    margin-top: 1vw;
-}
-
 
 .facebookIcon {
     position: absolute;
@@ -77,13 +78,14 @@
 
 .button {
     width: 40vw;
-    height: 5vw;
-    outline: none;
-    border: none;
+    height: 4vw;
+    margin-top: 1.5vw;
     background: #FF2F6D;
     color: #fff;
-    font-size: 1.5vw;
+    outline: none;
+    border: none;
     cursor: pointer;
+    font-size: 1.5vw;
     border-radius: 1vw;
     transition: 0.5s;
     opacity: 0.7;
@@ -95,18 +97,10 @@
 }
 
 .forgetPassword {
-    margin-top: 20px;
+    margin: 10px 0 0 0;
     color: #000;
     font-size: 1.5vw;
-    font-weight: 900;
-}
-
-.forgetPassword:nth-child(even) {
-    font-size: 1.5vw;
-}
-
-.forgetPassword:nth-child(odd) {
-    cursor: pointer;
+    font-weight: 500;
 }
 
 .mediaText {
@@ -120,15 +114,15 @@
     width: 40vw;
     height: 4vw;
     background: #fff;
-    border: 1px solid #ddd;
-    margin-top: 20px;
+    border: 3px solid #ddd;
+    margin-top: 15px;
     justify-content: center;
     align-items: center;
 }
 
 .box {
-    margin: 35px 0 20px 0;
-    font-weight: 600;
+    margin-top: 1vw;
+    font-weight: 500;
     display: flex;
 }
 
@@ -138,7 +132,7 @@
 }
 
 .endTextPink {
-    margin-left: 2px;
+    margin-left:0.3vw;
     font-size: 1.2vw;
     color: #FF2F6D;
     cursor: pointer;
@@ -148,5 +142,119 @@
 .endTextPink:hover {
     color: #ff1d61;
 }
+
+@media (max-width: 1025px) {
+    .container {
+        height: 110vw;
+        width: 90vw;
+    }
+
+    .mainText {
+        margin-right: -1vw;
+        font-size: 6vw;
+    }
+
+    .mediaBox {
+        width: 70vw;
+        height: 10vw;
+        margin-top: 25px;
+    }
+
+    .mediaText {
+        font-size: 4vw;
+    }
+
+    .googleIcon {
+        margin-left: -30vw;
+        font-size: 5vw;
+    }
+
+    .facebookIcon {
+        margin-left: -30vw;
+        font-size: 5vw;
+    }
+
+    .forgetPassword {
+        font-size: 4vw;
+        margin-top: 2vw;
+    }
+
+    .input {
+        width: 70vw;
+        height: 10vw;
+        font-size: 3.5vw;
+        margin-top: 2vw;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3.5vw;
+        padding: 35px;
+    }
+
+    .box{
+        margin-top: 3.5vw;
+    }
+
+    .endText {
+        font-size: 3vw;
+    }
+
+    .endTextPink {
+        font-size: 3vw;
+    }
+
+    .menu {
+        height: 12vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin-top: 20vw;
+        height: 140vw;
+    }
+
+    .input {
+        padding: 7px;
+        margin-top: 10px;
+    }
+
+    .mediaBox {
+        padding: 4px;
+        margin-top: 20px;
+    }
+
+    .endText {
+        font-size: 3.5vw;
+    }
+
+    .endTextPink {
+        font-size: 3.5vw;
+    }
+    
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    .box{
+        margin-top: 10px;
+    }
+    .menu {
+        height: 20vw;
+    }
+
+    .logo {
+        font-size: 10vw;
+    }
+
+}
+
 
 

@@ -45,11 +45,11 @@
     color: #000;
     font-size: 2.5vw;
     font-weight: 500;
-    margin: 1vw 0 0 -15vw;
+    margin: 1vw 0 0 -15.4vw;
 }
 
 .input {
-    width: 38vw;
+    width: 40vw;
     margin-top: 20px;
     height: 4vw;
     padding-left: 2vw;
@@ -78,16 +78,15 @@
 .button {
     width: 40vw;
     height: 4vw;
-    outline: none;
-    border: none;
+    margin-top: 1.5vw;
     background: #FF2F6D;
     color: #fff;
-    font-size: 1.5vw;
-    padding: 10px;
+    outline: none;
+    border: none;
     cursor: pointer;
+    font-size: 1.5vw;
     border-radius: 1vw;
     transition: 0.5s;
-    margin-top: 1.5vw;
     opacity: 0.7;
 }
 
@@ -114,19 +113,15 @@
     width: 40vw;
     height: 4vw;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     margin-top: 15px;
     justify-content: center;
     align-items: center;
 }
 
-.mediaBox:nth-child(even) {
-    margin-top: 10px;
-}
-
 .box {
     margin: 20px 0 20px 0;
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
 }
 
@@ -136,7 +131,7 @@
 }
 
 .endTextPink {
-    margin-left: 2px;
+    margin-left: 0.3vw;
     font-size: 1.2vw;
     color: #FF2F6D;
     cursor: pointer;
@@ -155,6 +150,7 @@
 
     .mainText {
         font-size: 6vw;
+        margin-right: -5vw;
     }
 
     .mediaBox {
@@ -255,8 +251,3 @@
 
 }
 
-@media (max-width: 290px) {
-    .container {
-        height: 170vw;
-    }
-}

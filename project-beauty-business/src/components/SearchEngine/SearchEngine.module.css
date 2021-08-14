@@ -66,15 +66,15 @@
     background-color:#c40985;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1025px) {
  .background {
      width: 80vw;
      height: 30vw;
-     margin-top: 50vw;
+     margin-top: 40vw;
  }   
 
  .text {
-     font-size: 2vw;
+     font-size: 2.3vw;
  }
 
  .select {
@@ -101,7 +101,6 @@
 @media (max-width: 850px) {
     .background {
         height: 30vw;
-        margin-top: 50vw;
     }
 
     .text {

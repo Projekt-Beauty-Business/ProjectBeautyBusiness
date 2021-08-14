@@ -31,7 +31,7 @@
 
 .whitetable { grid-area: 2 / 1 / 3 / 4; }
 .whitetable{
-  width: 100vh;
+  width: 50vw;
   margin-left: 425px;
   padding-top: 30px;
   text-align: center;
