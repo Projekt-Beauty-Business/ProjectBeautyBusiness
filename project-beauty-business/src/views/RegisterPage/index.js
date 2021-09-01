@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import * as classes from './style.module.css';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
-import { BrowserRouter as Router, 
-    Switch,
-    Route,
-    Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const RegisterPage = (props) => (
     <div className={classes.background}>

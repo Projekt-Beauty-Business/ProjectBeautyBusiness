@@ -3,21 +3,21 @@
   justify-content: space-between;
 }
 
-.leftimage, .centerimage, .rightimage{
+.leftImage, .centerImage, .rightImage{
   width: 32.5vw;
   height: 100vh;
   background-size: cover;
 }
 
-.leftimage{
+.leftImage{
   background-image: url(../../assets/leftgirl.png);
 }
 
-.centerimage{
+.centerImage{
   background-image: url(../../assets/centergirl.png);
 }
 
-.rightimage{
+.rightImage{
   background-image: url(../../assets/rightgirl.png);
 }
 
@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-.whitetable{
+.whiteTable{
   width: 50vw;
   padding-top: 2vw;
   text-align: center;
@@ -74,11 +74,11 @@
 }
 
 @media (max-width:1025px){
-    .centerimage, .rightimage{
+    .centerImage, .rightImage{
       display: none;
     }
 
-    .leftimage{
+    .leftImage{
       width: 100vw;
     }
 
@@ -86,7 +86,7 @@
       justify-content: flex-end;
     }
 
-    .whitetable{
+    .whiteTable{
       height: 100vh;
       width: 50vw;
     }

@@ -1,15 +1,15 @@
 import React from 'react';
-import * as classes from './Main.module.css'
-import Menu from '../../components/Menu/Menu';
-import SearchEngine from '../../components/SearchEngine/SearchEngine';
+import * as classes from './style.module.css'
+import Menu from '../../components/Menu';
+import SearchEngine from '../../components/SearchEngine';
 
-const Main = (props) => (
+const SearchPage = (props) => (
         <div className={classes.photo}>
                 <Menu />
                 <SearchEngine />
         </div>
 );
 
-Main.propTypes = {};
+SearchPage.propTypes = {};
 
-export default Main;
+export default SearchPage;

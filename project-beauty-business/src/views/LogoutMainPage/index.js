@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import * as classes from './style.module.css';
-import Menu from '../../components/Menu/Menu';
+import Index from '../../components/Menu';
 
 const LogoutMainPage = (props) => (
     <Fragment>
             <div className={classes.background}></div>
             <div className={classes.invisibleBackgound}>
-                <Menu />
+                <Index />
                 <div className={classes.firstContainer}>
                     <div className={classes.leftFirstContiner}>
                         <div className={classes.mainPhoto}></div>

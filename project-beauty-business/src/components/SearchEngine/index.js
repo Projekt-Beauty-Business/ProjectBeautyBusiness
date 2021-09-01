@@ -1,12 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import * as classes from './SearchEngine.module.css'
+import * as classes from './style.module.css'
 import { options } from '../../assets/data';
 import Select from 'react-select';
-import { BrowserRouter as Router, 
-  Switch,
-  Route,
-  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const customStyles = {
     option: (provided, state) => ({
@@ -35,7 +31,7 @@ const SearchEngine = (props) => (
         <div className={classes.box}>
             <div className={classes.boxSelect}>
                 <Select components={{ DropdownIndicator:() => null, IndicatorSeparator:() => null }} className={classes.select} styles={customStyles}  placeholder="SPECIAJLIZACJA" options={options}/>
-                <Select components={{ DropdownIndicator:() => null, IndicatorSeparator:() => null }} className={classes.select} styles={customStyles}  placeholder="MIASTO LUB DZIELNICA" options={options}/ >
+                <Select components={{ DropdownIndicator:() => null, IndicatorSeparator:() => null }} className={classes.select} styles={customStyles}  placeholder="MIASTO LUB DZIELNICA" options={options}/>
             </div>
             <Link className={classes.link} to="/LogoutMainPage">
               <div className={classes.button}>
