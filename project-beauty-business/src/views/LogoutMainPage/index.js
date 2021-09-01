@@ -1,22 +1,43 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import * as classes from './style.module.css';
-import Index from '../../components/Menu';
+import Menu from '../../components/Menu';
+import { withStyles } from '@material-ui/core/styles';
+import {Rating} from '@material-ui/lab';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import Box from '@material-ui/core/Box';
+
+const StyledRating = withStyles({
+    iconFilled: {
+        color: '#ff6d75',
+    },
+    iconHover: {
+        color: '#ff3d47',
+    },
+})(Rating);
+
 
 const LogoutMainPage = (props) => (
     <Fragment>
             <div className={classes.background}></div>
-            <div className={classes.invisibleBackgound}>
-                <Index />
+            <div className={classes.invisibleBackground}>
+                <Menu />
                 <div className={classes.firstContainer}>
-                    <div className={classes.leftFirstContiner}>
+                    <div className={classes.leftFirstContainer}>
                         <div className={classes.mainPhoto}></div>
                         <div className={classes.mainInformation}>
                              <p className={classes.redirects}>Salony urody / Salon fryzjerski / Salon urody ASDASD</p>
                              <p className={classes.mainText}>SALON URODY ASDASD</p>
-                             <p>Stylizacja rzęs</p>
+                             <p className={classes.category}>Stylizacja rzęs</p>
                              <div className={classes.opinons}>
-                                 <div className={classes.hearts}></div>
+                                 <Box component="fieldset" mb={3} borderColor="transparent">
+                                     <StyledRating
+                                         name="customized-color"
+                                         defaultValue={2}
+                                         getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+                                         precision={0.5}
+                                         icon={<FavoriteIcon fontSize="inherit" />}
+                                     />
+                                 </Box>
                                  <p>25 opini</p>
                              </div>
                         </div>
